@@ -21,7 +21,11 @@ use sg90_pi::SG90;
 fn main() {
     let mut pin = SG90::new(rppal::pwm::Channel::Pwm0, 0.0).unwrap();
     pin.set_angle_deg(-90).unwrap();
-    thread::sleep(Duration::from_millis(1s000));
+    thread::sleep(Duration::from_millis(1000));
     pin.set_angle_deg(90).unwrap();
  }
  ```
+
+## Links
+* [RPPAL library](https://github.com/golemparts/rppal)
+* [SG90 datasheet](http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf)

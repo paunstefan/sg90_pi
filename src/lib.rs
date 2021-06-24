@@ -24,7 +24,7 @@
 //! fn main() {
 //!     let mut pin = SG90::new(rppal::pwm::Channel::Pwm0, 0.0).unwrap();
 //!     pin.set_angle_deg(-90).unwrap();
-//!     thread::sleep(Duration::from_millis(1s000));
+//!     thread::sleep(Duration::from_millis(1000));
 //!     pin.set_angle_deg(90).unwrap();
 //! }
 //! ```
